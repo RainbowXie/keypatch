@@ -1301,7 +1301,7 @@ class SearchResultChooser(Choose):
     def __init__(self, title, items, flags=0, width=None, height=None, embedded=False, modal=False):
         super(SearchResultChooser, self).__init__(
             title,
-            [["Address", Choose.CHCOL_HEX|40]],
+            [["Address", idaapi.CHCOL_HEX|40]],
             flags = flags,
             width = width,
             height = height,
